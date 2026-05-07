@@ -8,13 +8,14 @@ function reverseString(input: string): string {
 
 type StringOrNumber = string | number;
 
-function checkType(value: StringOrNumber): string {
-  if (typeof value === "string") {
-    return "String";
+function checkType(input: StringOrNumber): string {
+  if (typeof input === "string") {
+    return '"String";';
+  } else {
+    return '"Number";';
   }
-
-  return "Number";
 }
+
 
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
