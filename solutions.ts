@@ -50,16 +50,15 @@ class Person {
 
 class Student extends Person {
   grade: string;
-
   constructor(name: string, age: number, grade: string) {
     super(name, age);
     this.grade = grade;
   }
-
   getDetails(): string {
-    return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+    return `"Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}";`;
   }
 }
+
 
 function getIntersection(array1: number[], array2: number[]): number[] {
   return array1.filter((value) => array2.includes(value));
